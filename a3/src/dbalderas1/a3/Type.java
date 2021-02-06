@@ -2,10 +2,10 @@ package dbalderas1.a3;
 
 /**
  * Type of shape
- *
  * @author Diana Balderas
  * @version 1.0
  */
+
 
 public enum Type {
     SHAPE,
