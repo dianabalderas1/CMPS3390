@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 /**
  * Main Driver class for A4
- *
  * @author Diana Balderas
  * @version 1.0
  */
