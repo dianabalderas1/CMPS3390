@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="606.0" stylesheets="@details.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbalderas1.a5.DetailsController">
+   <top>
+      <ImageView fitHeight="262.0" fitWidth="416.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@images/CoinTracker-1.png" />
+         </image>
+         <effect>
+            <ColorAdjust hue="0.18" saturation="1.0" />
+         </effect>
+         <BorderPane.margin>
+            <Insets bottom="20.0" top="10.0" />
+         </BorderPane.margin>
+      </ImageView>
+   </top>
+   <center>
+      <VBox prefHeight="335.0" prefWidth="612.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="btcHBox" alignment="CENTER_LEFT" onMouseClicked="#onDetailedButtonClicked" prefHeight="100.0" prefWidth="200.0" styleClass="btc-hbox">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Bitcoin.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="labBTCValue" prefHeight="79.0" prefWidth="304.0" textFill="WHITE">
+                     <font>
+                        <Font name="Droid Sans Bold" size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox fx:id="ethHBox" alignment="CENTER_LEFT" onMouseClicked="#onDetailedButtonClicked" prefHeight="100.0" prefWidth="200.0" styleClass="eth-hbox">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Ethereum.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="40.0" />
+                     </VBox.margin>
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="labETHValue" prefHeight="79.0" prefWidth="272.0" textFill="WHITE">
+                     <font>
+                        <Font name="Droid Sans Bold" size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="30.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
