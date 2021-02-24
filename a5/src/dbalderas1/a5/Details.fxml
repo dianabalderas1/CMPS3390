@@ -61,7 +61,7 @@
                         <Insets left="40.0" />
                      </HBox.margin>
                   </ImageView>
-                  <Label fx:id="labETHValue" prefHeight="79.0" prefWidth="272.0" textFill="WHITE">
+                  <Label fx:id="labETHValue" prefHeight="79.0" prefWidth="308.0" textFill="WHITE">
                      <font>
                         <Font name="Droid Sans Bold" size="50.0" />
                      </font>

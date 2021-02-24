@@ -14,15 +14,28 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
+    /**
+     * Override constructor to start the coin tracker
+     * @param primaryStage representing the coin tracker imagery when it first runs
+     * @throws Exception if an error occurs
+     */
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("Details.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Details.fxml"));
+        Parent root = loader.load();
+        DetailsController controller = loader.getController();
+        Scene scene = new Scene(root, 700, 475);
         primaryStage.setTitle("Coin Tracker");
-        primaryStage.setScene(new Scene(root, 700, 575));
+        primaryStage.setScene(scene);
         primaryStage.show();
+
+        primaryStage.setOnHidden(e -> controller.shutdown());
     }
 
-
+    /**
+     * Main entry of A5555
+     * @param args String array that holds command line arguments
+     */
     public static void main(String[] args) {
         launch(args);
     }
