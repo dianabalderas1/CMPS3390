@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/dark_blue"
+    android:orientation="vertical">
+
+
+
+    <EditText
+        android:id="@+id/txtOutput"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:layout_weight="90"
+        android:gravity="start|top"
+        android:layout_margin="10dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:textColor="@color/lightest_tan"
+         />
+
+    <EditText
+        android:id="@+id/txtInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:autofillHints="@string/enter_message"
+        android:layout_margin="10dp"
+        android:imeOptions="actionSend"
+        android:textColor="@color/lightest_tan"
+        />
+</LinearLayout>
