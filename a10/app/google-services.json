@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "359392357288",
+    "project_id": "dbalderas1a10",
+    "storage_bucket": "dbalderas1a10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359392357288:android:ed5b2578a56169cdbe8b9d",
+        "android_client_info": {
+          "package_name": "dbalderas1.a10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359392357288-ersi1duorjl9p6p2qicbsrk0aju38hl4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG4XVCm5nOfP7r7UHidwPgz3fWrpEMfkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359392357288-ersi1duorjl9p6p2qicbsrk0aju38hl4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
