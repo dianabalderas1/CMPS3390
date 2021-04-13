@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Point;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.WindowManager;
 
 /**
@@ -31,6 +33,19 @@ public class GameActivity extends AppCompatActivity {
         gameView = new GameView(this, point.x, point.y);
 
         setContentView(gameView);
+    }
+
+    /**
+     * Identifies when the game is over, based ont player
+     */
+    public void gameOver() {
+        Handler handler = new Handler(Looper.getMainLooper());
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                finish();
+            }
+        }, 6000);
     }
 
     /**

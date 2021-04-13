@@ -11,11 +11,13 @@ import android.graphics.Paint;
  * @author Diana Balderas
  * @version 1.0
  */
-public class Laser {
+public class Laser implements GameObject  {
     private float x, y;
     private Bitmap laser;
     private float dpi;
     private Paint paint = new Paint();
+    private float health = 100f;
+    private final int width, height;
 
     /**
      * Resources from mipmap are used in the game activity
@@ -23,6 +25,8 @@ public class Laser {
      */
     public Laser(Resources res) {
         laser = BitmapFactory.decodeResource(res, R.mipmap.bullet);
+        width = laser.getWidth();
+        height = laser.getHeight();
         dpi = res.getDisplayMetrics().densityDpi;
     }
 
@@ -61,14 +65,54 @@ public class Laser {
      * Get the height of the player's position
      * @return representing the position of the lasers
      */
+    @Override
     public float getHeight() {
-        return laser.getHeight();
+        return height;
+    }
+
+    /**
+     * Determines of the player is alive based on their health
+     * @return the health of the player
+     */
+    @Override
+    public boolean isAlive() {
+        return health > 0f;
+    }
+
+    /**
+     * The player receives a health status based on playing the game
+     * @return the health of the player
+     */
+    @Override
+    public float getHealth() {
+        return health;
+    }
+
+    /**
+     * The player's health notifies if there were any damage
+     * @param damage the injuries on the player's attack
+     * @return the health damage the player received
+     */
+    @Override
+    public float takeDamage(float damage) {
+        return health -= damage;
+    }
+
+    /**
+     * The player's health status reflect on its repair amount needed to continue the game
+     * @param repairAmount the amount of repairs needed on the player's health
+     * @return the amount of repairs in the player's health
+     */
+    @Override
+    public float addHealth(float repairAmount) {
+        return health += repairAmount;
     }
 
     /**
      * Gets the x position of the player
      * @return the position is fixed in the game
      */
+    @Override
     public float getX() {
         return x;
     }
@@ -85,8 +129,18 @@ public class Laser {
      * Gets the y position of the player
      * @return the position is fixed in the game
      */
+    @Override
     public float getY() {
         return y;
+    }
+
+    /**
+     * Get the width of the player's position
+     * @return representing the width of the player
+     */
+    @Override
+    public float getWidth() {
+        return width;
     }
 
     /**
