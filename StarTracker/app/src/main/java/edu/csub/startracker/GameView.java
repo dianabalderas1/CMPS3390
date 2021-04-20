@@ -30,6 +30,8 @@ public class GameView extends SurfaceView implements Runnable {
     private EnemySpawner spawner;
     private final float screenWidth, screenHeight;
     private Paint textPaint = new Paint();
+    private Paint highScorePaint = new Paint();
+    private HighScore highScore = HighScore.getInstance();
 
 
     /**
@@ -41,11 +43,15 @@ public class GameView extends SurfaceView implements Runnable {
     public GameView(GameActivity context, int screenX, int screenY) {
         super(context);
 
+
         Resources res = getResources();
         screenWidth = res.getDisplayMetrics().widthPixels;
         screenHeight = res.getDisplayMetrics().heightPixels;
         textPaint.setColor(Color.WHITE);
         textPaint.setTextSize(screenWidth * 0.1f);
+
+        highScorePaint.setColor(Color.WHITE);
+        highScorePaint.setTextSize(screenWidth * 0.04f);
 
         background1 = new Background(screenX, screenY, res);
         background2 = new Background(screenX, screenY, res);
@@ -123,6 +129,7 @@ public class GameView extends SurfaceView implements Runnable {
                 if(checkCollision(laser, go)) {
                     laser.takeDamage(100);
                     go.takeDamage(25);
+                    highScore.addScore(25);
 
                 }
             }
@@ -164,6 +171,10 @@ public class GameView extends SurfaceView implements Runnable {
             if(!player.isAlive()) {
                 canvas.drawText("GAME OVER", screenWidth / 4f, screenHeight / 2f, textPaint);
             }
+
+            canvas.drawText(String.format("Score: %s",
+                    highScore.getCurScore()), screenWidth * 0.02f,
+                    screenHeight * 0.06f, highScorePaint);
 
             player.draw(canvas);
             spawner.draw(canvas);
