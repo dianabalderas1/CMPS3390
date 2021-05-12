@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/raleway_bold"
+            android:fontFamily="@font/gilroy_bold"
             android:textColor="#fff"
             android:textSize="24dp"
             android:textAlignment="center"
@@ -30,21 +30,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#fff"
+            android:fontFamily="@font/gilroy_light"
             android:id="@+id/tvLabelTotalConfirmed"
             style="@style/LabelFontStyle"
             android:text="Total Confirmed"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorTotalConfirmed"
             android:id="@+id/tvTotalConfirmed"
             style="@style/TotalFontStyle"
-            tools:text="162397"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_light"
+            android:textColor="@color/colorTotalConfirmed"
+            tools:text="162397" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_light"
             android:textColor="@color/colorTotalDeaths"
             android:id="@+id/tvLabelTotalDeaths"
             style="@style/LabelFontStyle"
@@ -53,6 +56,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_light"
             android:textColor="@color/colorTotalDeaths"
             android:id="@+id/tvTotalDeaths"
             style="@style/TotalFontStyle"
@@ -61,6 +65,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_light"
             android:textColor="@color/colorTotalRecovered"
             android:id="@+id/tvLabelTotalRecovered"
             style="@style/LabelFontStyle"
@@ -69,6 +74,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_light"
             android:textColor="@color/colorTotalRecovered"
             android:id="@+id/tvTotalRecovered"
             style="@style/TotalFontStyle"

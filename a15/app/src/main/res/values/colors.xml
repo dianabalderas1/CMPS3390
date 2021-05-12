@@ -3,9 +3,12 @@
     <color name="colorPrimary">#5560F0</color>
     <color name="colorPrimaryDark">#201F1F</color>
     <color name="colorAccent">#fff</color>
+    <color name="colorLightBlue">#A1A7F6</color>
+    <color name="colorDarkBlue">#1925BA</color>
+    <color name="colorBlack">#000</color>
 
     <color name="colorTotalConfirmed">#C68A93</color>
-    <color name="colorTotalDeaths">#868EA5</color>
+    <color name="colorTotalDeaths">#868ea5</color>
     <color name="colorTotalRecovered">#30A04A</color>
 
 </resources>
