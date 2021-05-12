@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#222222</color>
-    <color name="colorPrimaryDark">#002d72</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#5560F0</color>
+    <color name="colorPrimaryDark">#201F1F</color>
+    <color name="colorAccent">#fff</color>
 
-    <color name="colorTotalConfirmed">#e60000</color>
-    <color name="colorTotalDeaths">#999999</color>
-    <color name="colorTotalRecovered">#7bb974</color>
+    <color name="colorTotalConfirmed">#C68A93</color>
+    <color name="colorTotalDeaths">#868EA5</color>
+    <color name="colorTotalRecovered">#30A04A</color>
 
 </resources>
