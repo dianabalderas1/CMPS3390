@@ -30,6 +30,11 @@ import java.util.ArrayList;
 
 import dbalderas1.a15.R;
 
+/**
+ * Country Fragment Driver class for A10
+ * @author Diana Balderas
+ * @version 1.0
+ */
 public class CountryFragment extends Fragment {
 
     RecyclerView rvCovidCountry;
@@ -39,6 +44,13 @@ public class CountryFragment extends Fragment {
 
     ArrayList<CovidCountry> covidCountries;
 
+    /**
+     * Creates a layout to list the countries with COVID-19 cases
+     * @param inflater extends the amount of countries listed in the view
+     * @param container contains the listed countries with COVID-19 cases
+     * @param savedInstanceState saves the data that is actively current based on the date and time
+     * @return a view that contains data from the Rest APi
+     */
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_country, container, false);
@@ -54,11 +66,17 @@ public class CountryFragment extends Fragment {
         return root;
     }
 
+    /**
+     * The REST APi's data is organized and arranged based on the design made in CovidCountryAdapter
+     */
     private void showRecyclerView() {
         CovidCountryAdapter covidCountryAdapter = new CovidCountryAdapter(covidCountries);
         rvCovidCountry.setAdapter(covidCountryAdapter);
     }
 
+    /**
+     * Data is pulled from the REST API and displayed in the application
+     */
     private void getDataFromServer() {
         String url = "https://corona.lmao.ninja/v2/countries";
 
@@ -85,6 +103,10 @@ public class CountryFragment extends Fragment {
 
         },
                 new Response.ErrorListener() {
+                    /**
+                     * If an error happens to load current COVID-19 cases, an error will be displayed
+                     * @param error to be displayed when an error happens with the REST API
+                     */
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         progressBar.setVisibility(View.GONE);

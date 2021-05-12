@@ -10,9 +10,18 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+/**
+ * Main Activity Driver class for A10
+ * @author Diana Balderas
+ * @version 1.0
+ */
 public class MainActivity extends AppCompatActivity {
 
 
+    /**
+     * Displays the main activity layout with the navigation bar
+     * @param savedInstanceState saves the data that is actively current based on the date and time
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
