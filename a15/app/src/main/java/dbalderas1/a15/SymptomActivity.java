@@ -7,6 +7,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * Symptom Activity Driver class for A15
+ * @author Diana Balderas
+ * @version 1.0
+ */
 public class SymptomActivity extends AppCompatActivity {
 
     ImageView mainImageView;
@@ -15,6 +20,10 @@ public class SymptomActivity extends AppCompatActivity {
     String data1, data2;
     int symptomsView;
 
+    /**
+     * The view displays the symptom topic and its detailed information
+     * @param savedInstanceState saves the information created in the view
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +37,9 @@ public class SymptomActivity extends AppCompatActivity {
         setData();
     }
 
+    /**
+     * The activity gets the data from the previous activity
+     */
     private void getData() {
         if(getIntent().hasExtra("symptomsView") && getIntent().hasExtra("data1") &&
         getIntent().hasExtra("data2")) {
@@ -41,6 +53,9 @@ public class SymptomActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * The data is set in the activity
+     */
     private void setData() {
         title.setText(data1);
         description.setText(data2);

@@ -1,7 +1,7 @@
 package dbalderas1.a15.ui.country;
 
 /**
- * Covid Country Driver class for A10
+ * Covid Country Driver class for A15
  * @author Diana Balderas
  * @version 1.0
  */

@@ -16,7 +16,7 @@ import androidx.navigation.ui.NavigationUI;
 import dbalderas1.a15.ui.home.HomeFragment;
 
 /**
- * Main Activity Driver class for A10
+ * Main Activity Driver class for A15
  * @author Diana Balderas
  * @version 1.0
  */

@@ -32,7 +32,7 @@ import java.util.ArrayList;
 import dbalderas1.a15.R;
 
 /**
- * Country Fragment Driver class for A10
+ * Country Fragment Driver class for A15
  * @author Diana Balderas
  * @version 1.0
  */

@@ -8,13 +8,13 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_know_more.*
 
 /**
- * Know More Activity Driver class for A10
+ * Know More Activity Driver class for A15
  * @author Diana Balderas
  * @version 1.0
  */
 class KnowMoreActivity : AppCompatActivity() {
     /**
-     * The activity sends the user to a web page when the button is clicked
+     * The activity sends the user to a new activity when the button is clicked
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,5 +24,11 @@ class KnowMoreActivity : AppCompatActivity() {
             var intent = Intent(this@KnowMoreActivity,Symptoms::class.java)
             startActivity(intent)
         }
+
+        btnLearnMoreP.setOnClickListener {
+            var intent = Intent(this@KnowMoreActivity,Precautions::class.java)
+            startActivity(intent)
+        }
+
     }
 }

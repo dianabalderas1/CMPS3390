@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_splash_screen.*
 
 /**
- * Splash Screen class for A10
+ * Splash Screen class for A15
  * @author Diana Balderas
  * @version 1.0
  */

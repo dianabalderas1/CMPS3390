@@ -35,7 +35,7 @@ import dbalderas1.a15.R;
 import dbalderas1.a15.SplashScreen;
 
 /**
- * Home Fragment Driver class for A10
+ * Home Fragment Driver class for A15
  * @author Diana Balderas
  * @version 1.0
  */

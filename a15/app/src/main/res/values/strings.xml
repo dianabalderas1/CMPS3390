@@ -22,4 +22,22 @@
         <item>Symptoms may appear 2-14 days after exposure to the virus. People with these synptoms may have COVID-19.</item>
         <item>Symptoms may appear 2-14 days after exposure to the virus. People with these synptoms may have COVID-19.</item>
     </string-array>
+
+    <string-array name="precautions">
+        <item>Hand Wash</item>
+        <item>Stay Home</item>
+        <item>Social Distance</item>
+        <item>Clean Objects and Surface</item>
+        <item>Avoid Touching</item>
+        <item>Wear Mask in Public Places</item>
+    </string-array>
+
+    <string-array name="precautions_description">
+        <item>Clean your hands often, either with soap and water for 20 seconds or a hand sanitizer that contains at least 60% alcohol.</item>
+        <item>When you stay home, you help stop the spread to others, too. Try to stay out of crowded places. The fewer people you are around, the lower your chance of infection.</item>
+        <item>Stay at least 6 feet (about 2 arm lengths) from others who do not live with you. The main way COVID-19 spreads is from person-to-person contact.</item>
+        <item>Clean frequently touched objects and surfaces daily. If someone is sick or has tested positive for COVID-19, disinfect frequently touched surfaces.</item>
+        <item>Your eyes, nose, and mouth are a direct path into your body for viruses. scratch your nose, rub your eyes, or bite a hangnail, and you will let germs inside. Do not touch your face. </item>
+        <item>Wear a mask to protect yourself and others and stop the spread of COVID-19. Even if you do not show symptoms, you could carry the COVID-19 virus.</item>
+    </string-array>
 </resources>

@@ -13,6 +13,7 @@
         android:theme="@style/Theme.A15">
         <activity android:name=".KnowMoreActivity" />
         <activity android:name=".Symptoms" />
+        <activity android:name=".Precautions"/>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +22,10 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".PrecautionActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Details"/>
 
         <activity
             android:name=".SymptomActivity"

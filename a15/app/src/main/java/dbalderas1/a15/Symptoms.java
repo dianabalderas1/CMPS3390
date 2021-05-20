@@ -7,6 +7,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+/**
+ * Symptoms Driver class for A15
+ * @author Diana Balderas
+ * @version 1.0
+ */
 public class Symptoms extends AppCompatActivity {
 
     RecyclerView recyclerView;
@@ -14,6 +19,10 @@ public class Symptoms extends AppCompatActivity {
     String s1[], s2[];
     int images[] = {R.drawable.covid_person, R.drawable.covid_person, R.drawable.covid_person, R.drawable.covid_person, R.drawable.covid_person, R.drawable.covid_person};
 
+    /**
+     * Layouts the image, title, and descriptions of the different symptom topics
+     * @param savedInstanceState saves the information created in the view
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
