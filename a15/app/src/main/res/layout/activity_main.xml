@@ -47,7 +47,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="116dp"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
                 android:background="#fff"
@@ -61,11 +61,11 @@
                     android:fontFamily="@font/gilroy_bold"
                     android:text="To Know More About COVID-19"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <Button
                     android:id="@+id/btnKnowMore"
-                    android:layout_width="wrap_content"
+                    android:layout_width="140dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
@@ -88,6 +88,5 @@
 
 
     </androidx.cardview.widget.CardView>
-
 
 </RelativeLayout>

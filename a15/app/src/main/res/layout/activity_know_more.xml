@@ -53,19 +53,33 @@
                 android:textSize="14sp"/>
 
             <Button
-                android:id="@+id/btnLearnMore"
+                android:id="@+id/btnLearnMoreS"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_margin="10dp"
+                android:background="@color/colorPrimaryDark"
                 android:fontFamily="@font/gilroy_bold"
-                android:text="Learn More"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                android:text="Learn More About Symptoms"
                 android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnLearnMoreP"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
                 android:background="@color/colorPrimaryDark"
-                android:textSize="14sp"/>
+                android:fontFamily="@font/gilroy_bold"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Learn More About Precautions"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
 
         </LinearLayout>
+
 
     </androidx.cardview.widget.CardView>
 </RelativeLayout>

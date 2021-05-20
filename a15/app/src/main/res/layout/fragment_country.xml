@@ -9,9 +9,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvCovidCountry"
-        tools:listitem="@layout/item_list_covid_country"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_width="320dp"
+        android:layout_height="481dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        tools:listitem="@layout/item_list_covid_country" />
 
     <ProgressBar
         android:id="@+id/progress_circular_country"

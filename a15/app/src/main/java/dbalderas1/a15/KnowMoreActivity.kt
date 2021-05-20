@@ -20,8 +20,8 @@ class KnowMoreActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_know_more)
 
-        btnLearnMore.setOnClickListener {
-            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.who.int/emergencies/diseases/novel-coronavirus-2019"))
+        btnLearnMoreS.setOnClickListener {
+            var intent = Intent(this@KnowMoreActivity,Symptoms::class.java)
             startActivity(intent)
         }
     }
