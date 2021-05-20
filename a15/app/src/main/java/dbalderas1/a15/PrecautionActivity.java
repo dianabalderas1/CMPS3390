@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
  * @author Diana Balderas
  * @version 1.0
  */
-public class PrecautionActivity extends SymptomActivity {
+public class PrecautionActivity extends AppCompatActivity {
 
     ImageView precaution_mainImageView;
     TextView precaution_title, precaution_description;
